@@ -14,7 +14,12 @@ public class EmployeeWage {
 		EMP_RATE_PER_HR = eMP_RATE_PER_HR;
 		NUM_OF_WORKING_DAYS = nUM_OF_WORKING_DAYS;
 		MAX_HRS_IN_MONTH = mAX_HRS_IN_MONTH;
+		totalEmpWage=0;
 	}
+ void setTotalEmployeeWage(int totalEmpWage) 
+ {
+     this.totalEmpWage = totalEmpWage;
+ }
 public  int Wge_calculator()
  {
 	int empHrs=0;
@@ -44,10 +49,7 @@ public  int Wge_calculator()
 	return totalempWage;
 	 
  }
-void setTotalEmployeeWage(int totalEmpWage) 
-{
-    this.totalEmpWage = totalEmpWage;
-}
+
 public String toString() {
     System.out.println("Details of " + COMPANY_NAME + " employee");
     System.out.println("-----------------------------------------------------");
@@ -56,5 +58,6 @@ public String toString() {
     System.out.println("Maximum working hours:" + MAX_HRS_IN_MONTH);
     return "Total wage for a month of " + COMPANY_NAME + " employee is " + totalEmpWage + "\n";
 }
+
 
 }
