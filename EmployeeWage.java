@@ -12,7 +12,7 @@ public class EmployeeWage {
 		NUM_OF_WORKING_DAYS = nUM_OF_WORKING_DAYS;
 		MAX_HRS_IN_MONTH = mAX_HRS_IN_MONTH;
 	}
-private int Wge_calculator()
+public  int Wge_calculator()
  {
 	int empHrs=0;
 	int totalEmpHrs=0;
