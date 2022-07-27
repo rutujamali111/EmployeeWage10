@@ -2,14 +2,11 @@
 public class EmployeeWageBuilder {
 
 	public static void main(String[] args) {
-		EmployeeWage wipro=new EmployeeWage("wipro",30,25,140);
-		int total_wipro_wg=wipro.Wge_calculator();
-		System.out.println("Employee wage for Wipro is: "+total_wipro_wg);
-		
-		EmployeeWage tcs=new EmployeeWage("TCS",30,25,140);
-		int total_tcs_wg=tcs.Wge_calculator();
-		System.out.println("Employee wage for TCS is: "+total_tcs_wg);
-		
+		EmployeeWageComputation employeeWageComputation = new EmployeeWageComputation();
+        employeeWageComputation.addCompany("Microsoft", 4, 30, 100);
+        employeeWageComputation.addCompany("Google", 5, 40, 170);
+        employeeWageComputation.addCompany("Amazon", 19, 10, 150);
+        employeeWageComputation.calculateTotalWage();
 
 	}
 

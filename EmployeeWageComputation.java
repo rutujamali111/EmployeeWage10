@@ -66,5 +66,16 @@ public class EmployeeWageComputation {
 	        totalEmpWages.put(companyEmpWage.COMPANY_NAME, totalWage);
 	        return totalWage;
 	    }
+	    public int getTotalEmpWage(String companyName) 
+	    {
+	        return totalEmpWages.get(companyName);
+	    }
+
+
+		public void addCompany(String companyName, int wagePerHr, int maxWorkingDays, int maxWorkingHrs) {
+			EmployeeWage company = new EmployeeWage(companyName, wagePerHr, maxWorkingDays, maxWorkingHrs);
+	        companies.add(company);
+	        totalEmpWages.put(companyName, 0);
+		}
 
 	    }
